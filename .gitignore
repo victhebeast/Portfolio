@@ -84,7 +84,7 @@ typings/
 .dynamodb/
 
 # Git Deploy
-/git-deploy/deploy.php
+deploy.php
 
 # Minecraft maps
 mcmaps/
