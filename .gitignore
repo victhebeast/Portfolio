@@ -85,6 +85,7 @@ typings/
 
 # Git Deploy
 deploy.php
+deploy.log
 
 # Minecraft maps
 mcmaps/
