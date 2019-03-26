@@ -83,5 +83,8 @@ typings/
 # DynamoDB Local files
 .dynamodb/
 
+# Git Deploy
+git-deploy/deploy.php
+
 # Minecraft maps
 mcmaps/
