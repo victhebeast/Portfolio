@@ -29,3 +29,33 @@ if ('AmbientLightSensor' in window) {
 	};
 	sensor.start();
 }
+
+function manualDarkMode(checked) {
+	if (checked) {
+		$('body').removeClass('light');
+		$('body').addClass('dark');
+	} else {
+		$('body').removeClass('dark');
+		$('body').addClass('light');
+	}
+	if (typeof(Storage) !== "undefined") {
+		var retrievedSettings = JSON.parse(localStorage.getItem('siteSettings')) || {};
+		retrievedSettings.darkMode = checked;
+		localStorage.setItem('siteSettings', JSON.stringify(retrievedSettings));
+	}
+}
+
+$(function() {
+	if (typeof(Storage) !== "undefined") {
+		// Code for localStorage/sessionStorage.
+		var retrievedSettings = JSON.parse(localStorage.getItem('siteSettings'));
+		$('header nav label input:checkbox').prop('checked', retrievedSettings.darkMode);
+		if (retrievedSettings.darkMode) {
+			$('body').removeClass('light');
+			$('body').addClass('dark');
+		} else {
+			$('body').removeClass('dark');
+			$('body').addClass('light');
+		}
+	}
+});

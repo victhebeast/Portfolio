@@ -63,8 +63,61 @@ body header nav {
   z-index: 3;
   font-family: 'Roboto', sans-serif;
 }
+body header nav .switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+  margin: 5px 4px;
+}
+body header nav .switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+body header nav .switch input:checked + .slider {
+  background-color: #212121;
+}
+body header nav .switch input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+body header nav .switch input:focus + .slider {
+  box-shadow: 0 0 1px #212121;
+}
+body header nav .switch .slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #F5F5F5;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+body header nav .switch .slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+body header nav .switch .slider.round {
+  border-radius: 34px;
+}
+body header nav .switch .slider.round:before {
+  border-radius: 50%;
+}
 body header nav ul {
   margin: 0;
+  padding: 0;
+  display: inline-block;
   list-style-type: none;
 }
 body header nav ul li {
@@ -100,6 +153,9 @@ body footer {
   body header div#logo {
     width: calc((3/1) * 50px);
     height: 50px;
+  }
+  body header nav .switch {
+    margin: 8px 4px;
   }
   body header nav ul li a:link,
   body header nav ul li a:visited,

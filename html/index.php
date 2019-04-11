@@ -31,9 +31,9 @@ header("Link: <https://fonts.googleapis.com/css?family=Lato:400,700|Roboto>; rel
 			</div>
 		</div>
 		<footer>
-			<a href="https://www.linkedin.com/in/vilisei/"><i class="fab fa-linkedin-in"></i></a>
-			<a href="https://github.com/demosjarco"><i class="fab fa-github"></i></a>
-			<a href="https://stackoverflow.com/users/3745599/victor?tab=profile"><i class="fab fa-stack-overflow"></i></a>
+			<a href="https://www.linkedin.com/in/vilisei/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+			<a href="https://github.com/demosjarco" target="_blank"><i class="fab fa-github"></i></a>
+			<a href="https://stackoverflow.com/users/3745599/victor?tab=profile" target="_blank"><i class="fab fa-stack-overflow"></i></a>
 		</footer>
 	</div>
 	<?php include_once("./parts/footer.html") ?>
