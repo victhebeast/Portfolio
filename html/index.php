@@ -36,6 +36,26 @@ header("Link: <https://fonts.googleapis.com/css?family=Lato:400,700|Roboto>; rel
 			<a href="https://stackoverflow.com/users/3745599/victor?tab=profile" target="_blank"><i class="fab fa-stack-overflow"></i></a>
 		</footer>
 	</div>
+	<section class="school">
+		<span class="title">School</span>
+		<div class="tiles">
+			<div class="tile"></div>
+		</div>
+	</section>
+	<section class="work">
+		<span class="title">Work</span>
+		<div class="tiles">
+			<div class="tile">
+				<p class="singlemsg">This list is too small. You can help <a href="#">expand it. Hire me today!</a></p>
+			</div>
+		</div>
+	</section>
+	<section class="projects">
+		<span class="title">Projects</span>
+		<div class="tiles">
+			<div class="tile"></div>
+		</div>
+	</section>
 	<?php include_once("./parts/footer.html") ?>
 </body>
 </html>

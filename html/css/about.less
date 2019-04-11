@@ -1,5 +1,4 @@
 body {
-	
 	div.card {
 		position: relative;
 		margin: 0 auto;
@@ -98,6 +97,102 @@ body {
 				
 				i {
 					padding: 7.5px;
+				}
+			}
+		}
+	}
+	
+	section {
+		padding: 8px;
+		
+		span.title {
+			font-size: 48px;
+			line-height: 48px;
+			vertical-align: text-bottom;
+		}
+		
+		div.tiles {
+			display: flex;
+			
+			div.tile {
+				width: 250px;
+				height: 250px;
+				
+				box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+				
+				text-align: center;
+				
+				.singlemsg {
+					margin-top: (250px-38px)/2;
+				}
+				
+				a {
+					&:link, &:visited, &:hover, &:active {
+						text-decoration: none;
+						font-weight: bold;
+					}
+				}
+			}
+		}
+		
+		&.school {
+			div.tiles {
+				div.tile {
+					background-color: #4CD964;
+					color: white;
+				}
+			}
+		}
+		
+		&.work {
+			div.tiles {
+				div.tile {
+					background-color: #03a9f4;
+					color: white;
+				}
+			}
+		}
+	}
+	
+	&.light {
+		section {
+			div.tiles {
+				div.tile {
+					a {
+						&:link, &:visited, &:hover, &:active {
+							color: black;
+						}
+					}
+				}
+			}
+			
+			&.projects {
+				div.tiles {
+					div.tile {
+						background-color: #F5F5F5;
+					}
+				}
+			}
+		}
+	}
+	
+	&.dark {
+		section {
+			div.tiles {
+				div.tile {
+					a {
+						&:link, &:visited, &:hover, &:active {
+							color: white;
+						}
+					}
+				}
+			}
+			
+			&.projects {
+				div.tiles {
+					div.tile {
+						background-color: #212121;
+					}
 				}
 			}
 		}

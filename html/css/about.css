@@ -81,6 +81,59 @@ body div.card footer a:active {
 body div.card footer a i {
   padding: 7.5px;
 }
+body section {
+  padding: 8px;
+}
+body section span.title {
+  font-size: 48px;
+  line-height: 48px;
+  vertical-align: text-bottom;
+}
+body section div.tiles {
+  display: flex;
+}
+body section div.tiles div.tile {
+  width: 250px;
+  height: 250px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  text-align: center;
+}
+body section div.tiles div.tile .singlemsg {
+  margin-top: 106px;
+}
+body section div.tiles div.tile a:link,
+body section div.tiles div.tile a:visited,
+body section div.tiles div.tile a:hover,
+body section div.tiles div.tile a:active {
+  text-decoration: none;
+  font-weight: bold;
+}
+body section.school div.tiles div.tile {
+  background-color: #4CD964;
+  color: white;
+}
+body section.work div.tiles div.tile {
+  background-color: #03a9f4;
+  color: white;
+}
+body.light section div.tiles div.tile a:link,
+body.light section div.tiles div.tile a:visited,
+body.light section div.tiles div.tile a:hover,
+body.light section div.tiles div.tile a:active {
+  color: black;
+}
+body.light section.projects div.tiles div.tile {
+  background-color: #F5F5F5;
+}
+body.dark section div.tiles div.tile a:link,
+body.dark section div.tiles div.tile a:visited,
+body.dark section div.tiles div.tile a:hover,
+body.dark section div.tiles div.tile a:active {
+  color: white;
+}
+body.dark section.projects div.tiles div.tile {
+  background-color: #212121;
+}
 @media screen and (min-width: 650px) {
   body div.card {
     width: 75%;
