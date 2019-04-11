@@ -163,9 +163,31 @@ body {
 		
 		background-color: #4CD964;
 		color: white;
+		
+		> * {
+			display: inline;
+			color: white;
+		}
+		
+		a {
+			&:link, &:visited, &:hover, &:active {
+				text-decoration: none;
+				color: white;
+			}
+		}
+		
+		i {
+			padding-left: 8px;
+			color: white;
+		}
+		
+		i + span {
+			padding-left: 2px;
+		}
 	}
 }
 
+// Tablet or bigger
 @media screen and (min-width: 650px) {
 	body {
 		header {

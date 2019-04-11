@@ -149,6 +149,24 @@ body footer {
   background-color: #4CD964;
   color: white;
 }
+body footer > * {
+  display: inline;
+  color: white;
+}
+body footer a:link,
+body footer a:visited,
+body footer a:hover,
+body footer a:active {
+  text-decoration: none;
+  color: white;
+}
+body footer i {
+  padding-left: 8px;
+  color: white;
+}
+body footer i + span {
+  padding-left: 2px;
+}
 @media screen and (min-width: 650px) {
   body header div#logo {
     width: calc((3/1) * 50px);
