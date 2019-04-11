@@ -1,0 +1,29 @@
+body div.card {
+  position: relative;
+  margin: 0 auto;
+  margin-top: -200px;
+  width: 100%;
+  height: 400px;
+  z-index: 5000;
+}
+body div.card footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  background-color: #4CD964;
+  color: white;
+}
+body div.card footer i {
+  padding: 7.5px;
+}
+@media screen and (min-width: 650px) {
+  body div.card {
+    width: 75%;
+  }
+}
+@media screen and (min-width: 1024px) {
+  body div.card {
+    width: 50%;
+  }
+}

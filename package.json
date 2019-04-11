@@ -1,0 +1,24 @@
+{
+	"name": "demosjarco.dev",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"scripts": {
+		"less": "less-watch-compiler html/css html/css"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/demosjarco/Portfolio.git"
+	},
+	"author": "",
+	"license": "UNLICENSED",
+	"private": true,
+	"bugs": {
+		"url": "https://github.com/demosjarco/Portfolio/issues"
+	},
+	"homepage": "https://github.com/demosjarco/Portfolio#readme",
+	"devDependencies": {
+		"less": "^3.9.0",
+		"less-watch-compiler": "^1.13.0"
+	}
+}

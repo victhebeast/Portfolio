@@ -1,0 +1,7 @@
+body.light {
+  background-color: white;
+  color: black;
+}
+body.light div.card {
+  background-color: #fafafa;
+}

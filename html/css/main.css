@@ -1,0 +1,127 @@
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Lato Regular'), local('Lato-Regular'), url(https://fonts.gstatic.com/s/lato/v15/S6uyw4BMUTPHjx4wWw.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Lato Bold'), local('Lato-Bold'), url(https://fonts.gstatic.com/s/lato/v15/S6u9w4BMUTPHh6UVSwiPHA.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Open Sans Regular'), local('OpenSans-Regular'), url(https://fonts.gstatic.com/s/opensans/v16/mem8YaGs126MiZpBA-UFVZ0e.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Open Sans Bold'), local('OpenSans-Bold'), url(https://fonts.gstatic.com/s/opensans/v16/mem5YaGs126MiZpBA-UN7rgOUuhs.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Roboto'), local('Roboto-Regular'), url(https://fonts.gstatic.com/s/roboto/v19/KFOmCnqEu92Fr1Mu4mxP.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Roboto Bold'), local('Roboto-Bold'), url(https://fonts.gstatic.com/s/roboto/v19/KFOlCnqEu92Fr1MmWUlfBBc9.ttf) format('truetype');
+}
+body {
+  margin: 0;
+  padding: 0;
+}
+body header {
+  position: relative;
+  height: 400px;
+  overflow: hidden;
+}
+body header div.background {
+  position: absolute;
+  left: -10%;
+  top: -10%;
+  width: 120%;
+  height: 120%;
+  z-index: 1;
+  background-image: url("../images/close-up-code-codes-239898.jpg");
+  background-size: cover;
+  background-position: center center;
+  filter: blur(5px);
+}
+body header div.darken {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  background-color: rgba(0, 0, 0, 0.66666667);
+}
+body header div#logo {
+  display: inline-block;
+  position: absolute;
+  left: 0;
+  padding-left: 8px;
+  z-index: 3;
+  width: calc((3/1) * 44px);
+  height: 44px;
+  background-image: url("../images/logo.svg");
+  background-size: contain;
+  background-position: center center;
+}
+body header nav {
+  position: absolute;
+  right: 8px;
+  z-index: 3;
+  font-family: 'Roboto', sans-serif;
+}
+body header nav ul {
+  margin: 0;
+  list-style-type: none;
+}
+body header nav ul li {
+  display: inline-block;
+}
+body header nav ul li a {
+  display: inline-block;
+}
+body header nav ul li a:link,
+body header nav ul li a:visited,
+body header nav ul li a:hover,
+body header nav ul li a:active {
+  padding: 11.5px 4px;
+  text-decoration: none;
+  color: white;
+  border-bottom: none;
+}
+body header nav ul li a:hover,
+body header nav ul li a.current {
+  border-bottom: 2px solid #03a9f4;
+}
+body div.card {
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+body footer {
+  padding: 0.33% 0;
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  background-color: #4CD964;
+  color: white;
+}
+@media screen and (min-width: 650px) {
+  body header div#logo {
+    width: calc((3/1) * 50px);
+    height: 50px;
+  }
+  body header nav ul li a:link,
+  body header nav ul li a:visited,
+  body header nav ul li a:hover,
+  body header nav ul li a:active {
+    padding: 14.5px 4px;
+  }
+}
