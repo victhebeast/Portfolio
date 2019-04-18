@@ -3,9 +3,6 @@
 include_once("./parts/preload.php");
 header("Link: </css/about.css>; as=style; rel=preload", false);
 header("Link: </images/close-up-code-coding-239898.png>; rel=preload; as=image", false);
-header("Link: </images/logo.svg>; rel=preload; as=image", false);
-header("Link: <https://use.fontawesome.com/releases/v5.8.1/css/all.css>; rel=preload; as=image; crossorigin", false);
-header("Link: <https://fonts.googleapis.com/css?family=Lato:400,700|Roboto>; rel=preload; as=image; crossorigin", false);
 ?>
 <!doctype html>
 <html>
