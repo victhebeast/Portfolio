@@ -18,7 +18,7 @@ header("Link: <//use.fontawesome.com/releases/v5.8.1/css/all.css>; rel=preload; 
 </head>
 
 <body class="light">
-	<?php include_once("./parts/header.html") ?>
+	<?php include_once("parts/header.php") ?>
 	<div class="card">
 		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam veritatis iusto nobis repudiandae iure sapiente corrupti reprehenderit delectus voluptatibus vero voluptas distinctio, ipsa nostrum. Error illum ea porro quasi adipisci?</p>
 		<footer><i class="fab fa-facebook-f"></i><i class="fab fa-twitter"></i><i class="fab fa-linkedin-in"></i><i class="fab fa-github"></i></footer>

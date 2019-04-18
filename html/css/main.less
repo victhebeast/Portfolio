@@ -23,7 +23,8 @@ body {
 			height: 120%;
 			z-index: 1;
 			
-			background-image: url("../images/close-up-code-coding-239898.png");
+			background-color: black;
+			//background-image: url("../images/close-up-code-coding-239898.png");
 			background-size: cover;
 			background-position: center center;
 			
@@ -152,10 +153,80 @@ body {
 	}
 	
 	div.card {
+		position: relative;
+		margin: 0 auto;
+		margin-top: -115px;
+		width: 100%;
+		z-index: 1000;
+		
 		box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+		
+		div.content {
+			display: flex;
+			justify-content: center;
+			
+			form {
+				padding: 15px;
+				width: 85%;
+				
+				> * {
+					display: block;
+					margin: 10px 0px;
+				}
+				
+				input, textarea {
+					outline: none;
+				}
+				
+				input[type=text], input[type=email], textarea {
+					width: 98%;
+					
+					border: none;
+					transition: border-bottom 0.2s ease-out;
+					
+					font-size: 16px;
+					line-height: 48px;
+					
+					background-color: transparent;
+					
+					&:focus {
+						&:invalid {
+							border-bottom: 1px solid #F44336;
+						}
+					}
+					
+					&:valid {
+						border-bottom: 1px solid #4CAF50;
+					}
+				}
+				
+				input[type=submit] {
+					padding: 8px 16px;
+					height: 36px;
+					
+					border: none;
+					border-radius: 2px;
+					
+					color: white;
+					font-size: 14px;
+					
+					background-color: #03A9F4;
+					
+					&:active {
+						background-color: #0288D1;
+						box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+					}
+					
+					&:disabled {
+						color: rgba(0, 0, 0, 0.26);
+						background-color: rgba(0, 0, 0, 0.12);
+					}
+				}
+			}
+		}
 	}
 	
-	footer {
+	> footer {
 		padding: .33% 0;
 		
 		text-align: center;
@@ -187,6 +258,30 @@ body {
 	}
 }
 
+body.light {
+	div.card {
+		div.content {
+			form {
+				input[type=text], input[type=email], textarea {
+					border-bottom: 1px solid rgba(0, 0, 0, 0.29803921568);
+				}
+			}
+		}
+	}
+}
+
+body.dark {
+	div.card {
+		div.content {
+			form {
+				input[type=text], input[type=email], textarea {
+					border-bottom: 1px solid rgba(255, 255, 255, 0.29803921568);
+				}
+			}
+		}
+	}
+}
+
 // Tablet or bigger
 @media screen and (min-width: 650px) {
 	body {
@@ -211,6 +306,19 @@ body {
 					}
 				}
 			}
+		}
+		
+		div.card {
+			width: 75%;
+		}
+	}
+}
+
+// Desktop or bigger
+@media screen and (min-width: 1280px) {
+	body {
+		div.card {
+			width: 50%;
 		}
 	}
 }

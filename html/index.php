@@ -2,7 +2,10 @@
 // HTTP2 Push
 include_once("./parts/preload.php");
 header("Link: </css/about.css>; as=style; rel=preload", false);
-header("Link: </images/close-up-code-coding-239898.png>; rel=preload; as=image", false);
+header("Link: </images/gcc.png>; rel=preload; as=image", false);
+header("Link: </images/mcc.png>; rel=preload; as=image", false);
+
+$fileName = basename(__FILE__, '.php');
 ?>
 <!doctype html>
 <html>
@@ -10,11 +13,10 @@ header("Link: </images/close-up-code-coding-239898.png>; rel=preload; as=image",
 	<?php include_once("./parts/head.html") ?>
 	<title>About</title>
 	<link rel="stylesheet" href="css/about.css" type="text/css" />
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 </head>
 
 <body class="light">
-	<?php include_once("./parts/header.html") ?>
+	<?php include_once("parts/header.php") ?>
 	<div class="card">
 		<div class="content">
 			<div class="picture"></div>
@@ -36,7 +38,22 @@ header("Link: </images/close-up-code-coding-239898.png>; rel=preload; as=image",
 	<section class="school">
 		<span class="title">School</span>
 		<div class="tiles">
-			<div class="tile"></div>
+			<div class="tile mcc">
+				<span class="title">MCC</span>
+				<span class="subtitle">Web Developer (AAS)</span>
+				<p>I have taken a variety of classes from server side languages, database setup and management, client side programming, and even use of common tools.</p>
+				<footer>August 2017 - May 2019</footer>
+				<div class="background"></div>
+				<div class="darken"></div>
+			</div>
+			<div class="tile gcc">
+				<span class="title">GCC</span>
+				<span class="subtitle">Information Security (AAS)</span>
+				<p>I have taken a variety of classes from server setup and management of linux and windows, Cisco networking, and security baseics to OS applications. I am also part of the school's Cyber Club.</p>
+				<footer>January 2019 - December 2019</footer>
+				<div class="background"></div>
+				<div class="darken"></div>
+			</div>
 		</div>
 	</section>
 	<section class="work">

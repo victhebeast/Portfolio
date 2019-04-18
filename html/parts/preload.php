@@ -7,6 +7,8 @@ header("Link: <https://fonts.googleapis.com/css?family=Lato:400,700|Roboto>; rel
 
 header("Link: <https://code.jquery.com/jquery-3.4.0.min.js>; as=script; rel=preload; crossorigin", false);
 header("Link: </js/darkMode.js>; as=script; rel=preload", false);
+header("Link: </js/main.js>; as=script; rel=preload", false);
 
 header("Link: </images/logo.svg>; rel=preload; as=image", false);
+header("Link: </images/close-up-code-coding-239898.png>; rel=preload; as=image", false);
 ?>

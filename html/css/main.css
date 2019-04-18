@@ -33,7 +33,7 @@ body header div.background {
   width: 120%;
   height: 120%;
   z-index: 1;
-  background-image: url("../images/close-up-code-coding-239898.png");
+  background-color: black;
   background-size: cover;
   background-position: center center;
   filter: blur(5px);
@@ -140,32 +140,100 @@ body header nav ul li a.current {
   border-bottom: 2px solid #03a9f4;
 }
 body div.card {
+  position: relative;
+  margin: 0 auto;
+  margin-top: -115px;
+  width: 100%;
+  z-index: 1000;
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
 }
-body footer {
+body div.card div.content {
+  display: flex;
+  justify-content: center;
+}
+body div.card div.content form {
+  padding: 15px;
+  width: 85%;
+}
+body div.card div.content form > * {
+  display: block;
+  margin: 10px 0px;
+}
+body div.card div.content form input,
+body div.card div.content form textarea {
+  outline: none;
+}
+body div.card div.content form input[type=text],
+body div.card div.content form input[type=email],
+body div.card div.content form textarea {
+  width: 98%;
+  border: none;
+  transition: border-bottom 0.2s ease-out;
+  font-size: 16px;
+  line-height: 48px;
+  background-color: transparent;
+}
+body div.card div.content form input[type=text]:focus:invalid,
+body div.card div.content form input[type=email]:focus:invalid,
+body div.card div.content form textarea:focus:invalid {
+  border-bottom: 1px solid #F44336;
+}
+body div.card div.content form input[type=text]:valid,
+body div.card div.content form input[type=email]:valid,
+body div.card div.content form textarea:valid {
+  border-bottom: 1px solid #4CAF50;
+}
+body div.card div.content form input[type=submit] {
+  padding: 8px 16px;
+  height: 36px;
+  border: none;
+  border-radius: 2px;
+  color: white;
+  font-size: 14px;
+  background-color: #03A9F4;
+}
+body div.card div.content form input[type=submit]:active {
+  background-color: #0288D1;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+body div.card div.content form input[type=submit]:disabled {
+  color: rgba(0, 0, 0, 0.26);
+  background-color: rgba(0, 0, 0, 0.12);
+}
+body > footer {
   padding: 0.33% 0;
   text-align: center;
   font-family: 'Roboto', sans-serif;
   background-color: #4CD964;
   color: white;
 }
-body footer > * {
+body > footer > * {
   display: inline;
   color: white;
 }
-body footer a:link,
-body footer a:visited,
-body footer a:hover,
-body footer a:active {
+body > footer a:link,
+body > footer a:visited,
+body > footer a:hover,
+body > footer a:active {
   text-decoration: none;
   color: white;
 }
-body footer i {
+body > footer i {
   padding-left: 8px;
   color: white;
 }
-body footer i + span {
+body > footer i + span {
   padding-left: 2px;
+}
+body.light div.card div.content form input[type=text],
+body.light div.card div.content form input[type=email],
+body.light div.card div.content form textarea {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.29803922);
+}
+body.dark div.card div.content form input[type=text],
+body.dark div.card div.content form input[type=email],
+body.dark div.card div.content form textarea {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.29803922);
 }
 @media screen and (min-width: 650px) {
   body header div#logo {
@@ -180,5 +248,13 @@ body footer i + span {
   body header nav ul li a:hover,
   body header nav ul li a:active {
     padding: 14.5px 4px;
+  }
+  body div.card {
+    width: 75%;
+  }
+}
+@media screen and (min-width: 1280px) {
+  body div.card {
+    width: 50%;
   }
 }

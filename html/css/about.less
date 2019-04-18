@@ -1,14 +1,6 @@
 body {
-	div.card {
-		position: relative;
-		margin: 0 auto;
-		margin-top: -115px;
-		width: 100%;
-		z-index: 1000;
-		
-		div.content {
-			display: flex;
-			
+	div.card {		
+		div.content {			
 			div.picture {
 				min-width: 100px;
 				max-width: 100px;
@@ -105,7 +97,7 @@ body {
 	section {
 		padding: 8px;
 		
-		span.title {
+		> span.title {
 			font-size: 48px;
 			line-height: 48px;
 			vertical-align: text-bottom;
@@ -117,10 +109,61 @@ body {
 			div.tile {
 				width: 250px;
 				height: 250px;
+				margin: 0px 4px;
+				position: relative;
+				overflow: hidden;
 				
 				box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
 				
 				text-align: center;
+				
+				&:first-child {
+					margin-left: 0px;
+				}
+				
+				&:last-child {
+					margin-right: 0px;
+				}
+				
+				div.background {
+					position: absolute;
+					left: -10%;
+					top: -10%;
+					width: 120%;
+					height: 120%;
+					z-index: -2;
+					
+					background-size: cover;
+					background-position: center center;
+					
+					filter: blur(5px);
+				}
+				
+				div.darken {
+					position: absolute;
+					top: 0;
+					width: 100%;
+					height: 100%;
+					z-index: -1;
+					
+					background-color: rgba(0, 0, 0, 2/3);
+				}
+				
+				&.gcc {
+					div.background {
+						background-image: url("../images/gcc.png");
+					}
+				}
+				
+				&.mcc {
+					div.background {
+						background-image: url("../images/mcc.png");
+					}
+				}
+				
+				p {
+					font-size: medium;
+				}
 				
 				.singlemsg {
 					margin-top: (250px-38px)/2;
@@ -132,13 +175,30 @@ body {
 						font-weight: bold;
 					}
 				}
+				
+				span.title {
+					display: block;
+					font-size: x-large;
+				}
+				
+				span.subtitle {
+					display: block;
+					font-size: large;
+				}
+				
+				footer {
+					position: absolute;
+					bottom: 0;
+					width: 100%;
+					
+					font: status-bar;
+				}
 			}
 		}
 		
 		&.school {
 			div.tiles {
 				div.tile {
-					background-color: #4CD964;
 					color: white;
 				}
 			}

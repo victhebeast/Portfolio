@@ -1,3 +1,7 @@
+<?php
+$aboutClass = ($fileName == 'index') ? ' class="current"' : '';
+$contactClass = ($fileName == 'contact') ? ' class="current"' : '';
+?>
 <header>
 	<div class="background"></div>
 	<div class="darken"></div>
@@ -8,8 +12,8 @@
 			<span class="slider round fas fa-sun"></span>
 		</label>
 		<ul>
-			<li><a href="#" class="current">About</a></li>
-			<li><a href="#">Contact</a></li>
+			<li><a href="index.php"<?php echo($aboutClass); ?>>About</a></li>
+			<li><a href="contact.php"<?php echo($contactClass); ?>>Contact</a></li>
 		</ul>
 	</nav>
 </header>
