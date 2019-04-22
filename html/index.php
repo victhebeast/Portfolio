@@ -134,7 +134,7 @@ $fileName = basename(__FILE__, '.php');
 					<div class="card-body">
 						<h5 class="card-title">Dank Beats Discord Bot</h5>
 						<p class="card-text">Play random sound effects, recorded live sets from the top edm festivals in the world, and live radio from select stations in your discord voice channel at the highest quality possible.</p>
-						<a href="#" class="btn btn-primary">See more</a>
+						<a href="https://www.demosjarco.dev/dankbeats.php" class="btn btn-primary">See more</a>
 					</div>
 				</div>
 			</div>
