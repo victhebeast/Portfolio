@@ -1,6 +1,9 @@
 <?php
 $aboutClass = ($fileName == 'index') ? ' class="current"' : '';
 $contactClass = ($fileName == 'contact') ? ' class="current"' : '';
+$iclolClass = ($fileName == 'iclol') ? ' class="current"' : '';
+$dankbeatsClass = ($fileName == 'dankbeats') ? ' class="current"' : '';
+$psbnClass = ($fileName == 'psbn') ? ' class="current"' : '';
 ?>
 <header>
 	<div class="background"></div>
@@ -14,6 +17,14 @@ $contactClass = ($fileName == 'contact') ? ' class="current"' : '';
 		<ul>
 			<li><a href="index.php"<?php echo($aboutClass); ?>>About</a></li>
 			<li><a href="contact.php"<?php echo($contactClass); ?>>Contact</a></li>
+			<li>
+				<a href="#">Projects</a>
+				<ul>
+					<li><a href=""<?php echo($iclolClass); ?>>IC: LoL</a></li>
+					<li><a href=""<?php echo($dankbeatsClass); ?>>Dank Beats</a></li>
+					<li><a href=""<?php echo($psbnClass); ?>>PSBN</a></li>
+				</ul>
+			</li>
 		</ul>
 	</nav>
 </header>

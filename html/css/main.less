@@ -131,6 +131,10 @@ body {
 				li {
 					display: inline-block;
 					
+					&:hover {
+						cursor: pointer;
+					}
+					
 					a {
 						display: inline-block;
 						
@@ -147,12 +151,29 @@ body {
 							border-bottom: 2px solid #03a9f4;
 						}
 					}
+					
+					ul {
+						display: none;
+						position: absolute;
+						right: 0;
+						
+						li {
+							display: inline-block;
+							clear: both;
+							
+							text-align: center;
+						}
+					}
+					
+					&:hover > ul, &:focus-within > ul, ul:hover {
+						display: block;
+					}
 				}
 			}
 		}
 	}
 	
-	div.card {
+	> div.card {
 		position: relative;
 		margin: 0 auto;
 		margin-top: -115px;
@@ -259,7 +280,7 @@ body {
 }
 
 body.light {
-	div.card {
+	> div.card {
 		div.content {
 			form {
 				input[type=text], input[type=email], textarea {
@@ -271,7 +292,7 @@ body.light {
 }
 
 body.dark {
-	div.card {
+	> div.card {
 		div.content {
 			form {
 				input[type=text], input[type=email], textarea {
@@ -303,12 +324,22 @@ body.dark {
 								padding: ((@desktop-height - 21px)/2) 4px;
 							}
 						}
+						
+						ul {
+							li {
+								display: block;
+								
+								a {
+									width: 100%;
+								}
+							}
+						}
 					}
 				}
 			}
 		}
 		
-		div.card {
+		> div.card {
 			width: 75%;
 		}
 	}
@@ -317,7 +348,7 @@ body.dark {
 // Desktop or bigger
 @media screen and (min-width: 1280px) {
 	body {
-		div.card {
+		> div.card {
 			width: 50%;
 		}
 	}

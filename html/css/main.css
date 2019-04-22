@@ -123,6 +123,9 @@ body header nav ul {
 body header nav ul li {
   display: inline-block;
 }
+body header nav ul li:hover {
+  cursor: pointer;
+}
 body header nav ul li a {
   display: inline-block;
 }
@@ -139,7 +142,22 @@ body header nav ul li a:hover,
 body header nav ul li a.current {
   border-bottom: 2px solid #03a9f4;
 }
-body div.card {
+body header nav ul li ul {
+  display: none;
+  position: absolute;
+  right: 0;
+}
+body header nav ul li ul li {
+  display: inline-block;
+  clear: both;
+  text-align: center;
+}
+body header nav ul li:hover > ul,
+body header nav ul li:focus-within > ul,
+body header nav ul li ul:hover {
+  display: block;
+}
+body > div.card {
   position: relative;
   margin: 0 auto;
   margin-top: -115px;
@@ -147,25 +165,25 @@ body div.card {
   z-index: 1000;
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
 }
-body div.card div.content {
+body > div.card div.content {
   display: flex;
   justify-content: center;
 }
-body div.card div.content form {
+body > div.card div.content form {
   padding: 15px;
   width: 85%;
 }
-body div.card div.content form > * {
+body > div.card div.content form > * {
   display: block;
   margin: 10px 0px;
 }
-body div.card div.content form input,
-body div.card div.content form textarea {
+body > div.card div.content form input,
+body > div.card div.content form textarea {
   outline: none;
 }
-body div.card div.content form input[type=text],
-body div.card div.content form input[type=email],
-body div.card div.content form textarea {
+body > div.card div.content form input[type=text],
+body > div.card div.content form input[type=email],
+body > div.card div.content form textarea {
   width: 98%;
   border: none;
   transition: border-bottom 0.2s ease-out;
@@ -173,17 +191,17 @@ body div.card div.content form textarea {
   line-height: 48px;
   background-color: transparent;
 }
-body div.card div.content form input[type=text]:focus:invalid,
-body div.card div.content form input[type=email]:focus:invalid,
-body div.card div.content form textarea:focus:invalid {
+body > div.card div.content form input[type=text]:focus:invalid,
+body > div.card div.content form input[type=email]:focus:invalid,
+body > div.card div.content form textarea:focus:invalid {
   border-bottom: 1px solid #F44336;
 }
-body div.card div.content form input[type=text]:valid,
-body div.card div.content form input[type=email]:valid,
-body div.card div.content form textarea:valid {
+body > div.card div.content form input[type=text]:valid,
+body > div.card div.content form input[type=email]:valid,
+body > div.card div.content form textarea:valid {
   border-bottom: 1px solid #4CAF50;
 }
-body div.card div.content form input[type=submit] {
+body > div.card div.content form input[type=submit] {
   padding: 8px 16px;
   height: 36px;
   border: none;
@@ -192,11 +210,11 @@ body div.card div.content form input[type=submit] {
   font-size: 14px;
   background-color: #03A9F4;
 }
-body div.card div.content form input[type=submit]:active {
+body > div.card div.content form input[type=submit]:active {
   background-color: #0288D1;
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
 }
-body div.card div.content form input[type=submit]:disabled {
+body > div.card div.content form input[type=submit]:disabled {
   color: rgba(0, 0, 0, 0.26);
   background-color: rgba(0, 0, 0, 0.12);
 }
@@ -225,14 +243,14 @@ body > footer i {
 body > footer i + span {
   padding-left: 2px;
 }
-body.light div.card div.content form input[type=text],
-body.light div.card div.content form input[type=email],
-body.light div.card div.content form textarea {
+body.light > div.card div.content form input[type=text],
+body.light > div.card div.content form input[type=email],
+body.light > div.card div.content form textarea {
   border-bottom: 1px solid rgba(0, 0, 0, 0.29803922);
 }
-body.dark div.card div.content form input[type=text],
-body.dark div.card div.content form input[type=email],
-body.dark div.card div.content form textarea {
+body.dark > div.card div.content form input[type=text],
+body.dark > div.card div.content form input[type=email],
+body.dark > div.card div.content form textarea {
   border-bottom: 1px solid rgba(255, 255, 255, 0.29803922);
 }
 @media screen and (min-width: 650px) {
@@ -249,12 +267,18 @@ body.dark div.card div.content form textarea {
   body header nav ul li a:active {
     padding: 14.5px 4px;
   }
-  body div.card {
+  body header nav ul li ul li {
+    display: block;
+  }
+  body header nav ul li ul li a {
+    width: 100%;
+  }
+  body > div.card {
     width: 75%;
   }
 }
 @media screen and (min-width: 1280px) {
-  body div.card {
+  body > div.card {
     width: 50%;
   }
 }

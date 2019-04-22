@@ -1,10 +1,22 @@
+function makeDark() {
+	$('body').removeClass('light');
+	$('body').addClass('dark');
+	$('div.row div.card').addClass('bg-dark');
+	$('div.row div.card').addClass('text-white');
+}
+
+function makeLight() {
+	$('body').removeClass('dark');
+	$('body').addClass('light');
+	$('div.row div.card').removeClass('bg-dark');
+	$('div.row div.card').removeClass('text-white');
+}
+
 function myFunction(x) {
-	if (x.matches) { // If media query matches
-		$('body').removeClass('light');
-		$('body').addClass('dark');
+	if (x.matches) {
+		makeDark();
 	} else {
-		$('body').removeClass('dark');
-		$('body').addClass('light');
+		makeLight();
 	}
 }
 
@@ -17,11 +29,9 @@ if ('AmbientLightSensor' in window) {
 	sensor.onreading = () => {
 		console.log('Current light level:', sensor.illuminance);
 		if (10 > sensor.illuminance) {
-			$('body').removeClass('light');
-			$('body').addClass('dark');
+			makeDark();
 		} else {
-			$('body').removeClass('dark');
-			$('body').addClass('light');
+			makeLight();
 		}
 	};
 	sensor.onerror = (event) => {
@@ -32,11 +42,9 @@ if ('AmbientLightSensor' in window) {
 
 function manualDarkMode(checked) {
 	if (checked) {
-		$('body').removeClass('light');
-		$('body').addClass('dark');
+		makeDark();
 	} else {
-		$('body').removeClass('dark');
-		$('body').addClass('light');
+		makeLight();
 	}
 	if (typeof(Storage) !== "undefined") {
 		var retrievedSettings = JSON.parse(localStorage.getItem('siteSettings')) || {};
@@ -51,11 +59,9 @@ $(function() {
 		var retrievedSettings = JSON.parse(localStorage.getItem('siteSettings'));
 		$('header nav label input:checkbox').prop('checked', retrievedSettings.darkMode);
 		if (retrievedSettings.darkMode) {
-			$('body').removeClass('light');
-			$('body').addClass('dark');
+			makeDark();
 		} else {
-			$('body').removeClass('dark');
-			$('body').addClass('light');
+			makeLight();
 		}
 	}
 });

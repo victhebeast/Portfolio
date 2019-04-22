@@ -1,5 +1,5 @@
 body {
-	div.card {		
+	> div.card {		
 		div.content {			
 			div.picture {
 				min-width: 100px;
@@ -214,6 +214,19 @@ body {
 		}
 	}
 	
+	> div.container {
+		div.row {
+			div.col-lg {
+				div.card {
+					img {
+						height: 200px;
+						object-fit: cover;
+					}
+				}
+			}
+		}
+	}
+	
 	&.light {
 		section {
 			div.tiles {
@@ -262,7 +275,7 @@ body {
 // Tablet or bigger
 @media screen and (min-width: 650px) {
 	body {
-		div.card {
+		> div.card {
 			width: 75%;
 			
 			div.content {
@@ -280,7 +293,7 @@ body {
 // Desktop or bigger
 @media screen and (min-width: 1280px) {
 	body {
-		div.card {
+		> div.card {
 			width: 50%;
 			
 			div.content {

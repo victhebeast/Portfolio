@@ -2,6 +2,6 @@ body.light {
   background-color: white;
   color: black;
 }
-body.light div.card {
+body.light > div.card {
   background-color: #F5F5F5;
 }

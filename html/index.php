@@ -4,20 +4,28 @@ include_once("./parts/preload.php");
 header("Link: </css/about.css>; as=style; rel=preload", false);
 header("Link: </images/gcc.png>; rel=preload; as=image", false);
 header("Link: </images/mcc.png>; rel=preload; as=image", false);
+header("Link: </images/psbn.png>; rel=preload; as=image", false);
+header("Link: </images/iclol.png>; rel=preload; as=image", false);
+header("Link: </images/dankBeats.jpg>; rel=preload; as=image", false);
 
 $fileName = basename(__FILE__, '.php');
 ?>
 <!doctype html>
-<html>
+<html><!-- InstanceBegin template="/Templates/main.dwt" codeOutsideHTMLIsLocked="false" -->
 <head>
-	<?php include_once("./parts/head.html") ?>
-	<title>About</title>
-	<link rel="stylesheet" href="css/about.css" type="text/css" />
+<?php include_once("./parts/head.html") ?>
+<!-- InstanceBeginEditable name="doctitle" -->
+<title>Untitled Document</title>
+<!-- InstanceEndEditable -->
+<!-- InstanceBeginEditable name="head" -->
+<link rel="stylesheet" href="css/about.css" type="text/css" />
+<!-- InstanceEndEditable -->
 </head>
 
 <body class="light">
 	<?php include_once("parts/header.php") ?>
 	<div class="card">
+		<!-- InstanceBeginEditable name="card" -->
 		<div class="content">
 			<div class="picture"></div>
 			<div class="info">
@@ -34,42 +42,106 @@ $fileName = basename(__FILE__, '.php');
 			<a href="https://github.com/demosjarco" target="_blank"><i class="fab fa-github"></i></a>
 			<a href="https://stackoverflow.com/users/3745599/victor?tab=profile" target="_blank"><i class="fab fa-stack-overflow"></i></a>
 		</footer>
+		<!-- InstanceEndEditable -->
 	</div>
-	<section class="school">
-		<span class="title">School</span>
-		<div class="tiles">
-			<div class="tile mcc">
-				<span class="title">MCC</span>
-				<span class="subtitle">Web Developer (AAS)</span>
-				<p>I have taken a variety of classes from server side languages, database setup and management, client side programming, and even use of common tools.</p>
-				<footer>August 2017 - May 2019</footer>
-				<div class="background"></div>
-				<div class="darken"></div>
-			</div>
-			<div class="tile gcc">
-				<span class="title">GCC</span>
-				<span class="subtitle">Information Security (AAS)</span>
-				<p>I have taken a variety of classes from server setup and management of linux and windows, Cisco networking, and security baseics to OS applications. I am also part of the school's Cyber Club.</p>
-				<footer>January 2019 - December 2019</footer>
-				<div class="background"></div>
-				<div class="darken"></div>
+	<!-- InstanceBeginEditable name="Main Body" -->
+	<div class="container">
+		<div class="row">
+			<div class="col-lg">
+				<h2>School</h2>
 			</div>
 		</div>
-	</section>
-	<section class="work">
-		<span class="title">Work</span>
-		<div class="tiles">
-			<div class="tile">
-				<p class="singlemsg">This list is too small. You can help <a href="#">expand it. Hire me today!</a></p>
+	</div>
+	<div class="container">
+		<div class="row">
+			<div class="col-lg">
+				<div class="card">
+					<img src="images/mcc.png" class="card-img-top" />
+					<div class="card-body">
+						<h5 class="card-title">MCC</h5>
+						<h6 class="card-subtitle text-muted">Web Developer (AAS)</h6>
+						<p class="card-text">I have taken a variety of classes from server side languages, database setup and management, client side programming, and even use of common tools.</p>
+					</div>
+					<div class="card-footer text-muted">August 2017 - May 2019</div>
+				</div>
+			</div>
+			<div class="col-lg">
+				<div class="card">
+					<img src="images/gcc.png" class="card-img-top" />
+					<div class="card-body">
+						<h5 class="card-title">GCC</h5>
+						<h6 class="card-subtitle text-muted">Information Security (AAS)</h6>
+						<p class="card-text">I have taken a variety of classes from server setup and management of linux and windows, Cisco networking, and security baseics to OS applications. I am also part of the school's Cyber Club.</p>
+					</div>
+					<div class="card-footer text-muted">January 2019 - December 2019</div>
+				</div>
 			</div>
 		</div>
-	</section>
-	<section class="projects">
-		<span class="title">Projects</span>
-		<div class="tiles">
-			<div class="tile"></div>
+	</div>
+	<div class="container">
+		<div class="row">
+			<div class="col-lg">
+				<h2>Work</h2>
+			</div>
 		</div>
-	</section>
+	</div>
+	<div class="container">
+		<div class="row">
+			<div class="col-lg">
+				<div class="card">
+					<div class="card-body">
+						<p class="card-text">This list is too small, you can help expand it</p>
+						<a href="#" class="btn btn-primary">Hire me!</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="container">
+		<div class="row">
+			<div class="col-lg">
+				<h2>Projects</h2>
+			</div>
+		</div>
+	</div>
+	<div class="container">
+		<div class="row">
+			<div class="col-lg">
+				<div class="card">
+					<img src="images/psbn.png" class="card-img-top" />
+					<div class="card-body">
+						<h5 class="card-title">PSBN</h5>
+						<p class="card-text">App created for the Peoria Student Broadcast Network. Watch live sports and shows from PSBN on your iPhone, iPad, or iPod Touch.</p>
+						<a href="#" class="btn btn-primary">See more</a>
+					</div>
+					<div class="card-footer text-muted">Discontinued</div>
+				</div>
+			</div>
+			<div class="col-lg">
+				<div class="card">
+					<img src="images/iclol.png" class="card-img-top" />
+					<div class="card-body">
+						<h5 class="card-title">Info Center for League of Legends</h5>
+						<p class="card-text">The most comprehensive info app for everything in League of Legends is here! Improve your game and get better with all the tools and help you can possibly find. Stay up to date with the latest everything in League of Legends!</p>
+						<a href="#" class="btn btn-primary">See more</a>
+					</div>
+					<div class="card-footer text-muted">Discontinued</div>
+				</div>
+			</div>
+			<div class="col-lg">
+				<div class="card">
+					<img src="images/dankBeats.jpg" class="card-img-top" />
+					<div class="card-body">
+						<h5 class="card-title">Dank Beats Discord Bot</h5>
+						<p class="card-text">Play random sound effects, recorded live sets from the top edm festivals in the world, and live radio from select stations in your discord voice channel at the highest quality possible.</p>
+						<a href="#" class="btn btn-primary">See more</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- InstanceEndEditable -->
 	<?php include_once("./parts/footer.html") ?>
 </body>
-</html>
+<!-- InstanceEnd --></html>
