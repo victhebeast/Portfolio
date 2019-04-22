@@ -20,7 +20,7 @@ $psbnClass = ($fileName == 'psbn') ? ' class="current"' : '';
 			<li>
 				<a href="#">Projects</a>
 				<ul>
-					<li><a href=""<?php echo($iclolClass); ?>>IC: LoL</a></li>
+					<li><a href="https://www.demosjarco.dev/leagueinfocenter/"<?php echo($iclolClass); ?>>IC: LoL</a></li>
 					<li><a href=""<?php echo($dankbeatsClass); ?>>Dank Beats</a></li>
 					<li><a href=""<?php echo($psbnClass); ?>>PSBN</a></li>
 				</ul>
