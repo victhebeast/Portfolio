@@ -16,11 +16,11 @@ $fileName = basename(__FILE__, '.php');
 	<?php include_once("parts/header.php") ?>
 	<div class="card">
 		<div class="content">
-			<form action="">
-				<input type="text" required placeholder="Name" />
-				<input type="email" required placeholder="Email" />
-				<textarea required placeholder="Type your inquiry here"></textarea>
-				<input type="hidden" />
+			<form method="post">
+				<input name="userName" type="text" required placeholder="Name" />
+				<input name="userEmail" type="email" required placeholder="Email" />
+				<textarea name="contactContent" required placeholder="Type your inquiry here"></textarea>
+				<input name="submitted" type="hidden" value="true" />
 				<input type="submit" />
 			</form>
 		</div>
