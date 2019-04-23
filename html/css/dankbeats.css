@@ -1,10 +1,4 @@
 /* LESS Document */
-@font-face {
-  font-family: 'Roboto';
-  font-style: normal;
-  font-weight: 400;
-  src: local('Roboto'), local('Roboto-Regular'), url(https://fonts.gstatic.com/s/roboto/v19/KFOmCnqEu92Fr1Mu4mxP.ttf) format('truetype');
-}
 body > div.container div.row div.col-lg div.card {
   margin: 10px 0;
 }

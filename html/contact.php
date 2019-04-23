@@ -1,7 +1,6 @@
 <?php declare(strict_types=1);
 // HTTP2 Push
 include_once("./parts/preload.php");
-header("Link: </images/close-up-code-coding-239898.png>; rel=preload; as=image", false);
 
 $fileName = basename(__FILE__, '.php');
 ?>

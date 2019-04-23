@@ -1,6 +1,9 @@
 <?php declare(strict_types=1);
 // HTTP2 Push
+include_once("./parts/preload.php");
 header("Link: </css/about.css>; as=style; rel=preload", false);
+
+$fileName = basename(__FILE__, '.php');
 ?>
 <!doctype html>
 <html><!-- InstanceBegin template="/Templates/main.dwt" codeOutsideHTMLIsLocked="false" -->
