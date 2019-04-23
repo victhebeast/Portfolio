@@ -15,12 +15,12 @@ $psbnClass = ($fileName == 'psbn') ? ' class="current"' : '';
 			<span class="slider round fas fa-sun"></span>
 		</label>
 		<ul>
-			<li><a href="index.php"<?php echo($aboutClass); ?>>About</a></li>
-			<li><a href="contact.php"<?php echo($contactClass); ?>>Contact</a></li>
+			<li><a href="https://www.demosjarco.dev/"<?php echo($aboutClass); ?>>About</a></li>
+			<li><a href="https://www.demosjarco.dev/contact.php"<?php echo($contactClass); ?>>Contact</a></li>
 			<li>
 				<a href="#">Projects</a>
 				<ul>
-					<li><a href=""<?php echo($psbnClass); ?>>PSBN</a></li>
+					<li><a href="https://www.demosjarco.dev/psbn.php"<?php echo($psbnClass); ?>>PSBN</a></li>
 					<li><a href="https://www.demosjarco.dev/leagueinfocenter/"<?php echo($iclolClass); ?>>IC: LoL</a></li>
 					<li><a href="https://www.demosjarco.dev/dankbeats.php"<?php echo($dankbeatsClass); ?>>Dank Beats</a></li>
 				</ul>

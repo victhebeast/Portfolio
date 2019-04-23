@@ -1,0 +1,53 @@
+/* LESS Document */
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+body > div.container div.row div.col-lg div.card {
+  margin: 10px 0;
+}
+body > div.container div.row div.col-lg div.card div#profile {
+  padding: 10px 0;
+  margin-bottom: 10px;
+  font-family: 'Roboto', sans-serif;
+  color: white;
+}
+body > div.container div.row div.col-lg div.card div#profile div#profileIcon {
+  width: 190px;
+  height: 190px;
+  margin: 20px auto;
+  background-image: url("../images/dankBeats.jpg");
+  border-radius: 95px;
+  -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
+}
+body > div.container div.row div.col-lg div.card div#profile span#botName {
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+}
+body > div.container div.row div.col-lg div.card div#profile span#botName span#botTag {
+  position: relative;
+  margin-left: 6px;
+  top: -2px;
+  padding: 1px 2px;
+  border-radius: 3px;
+  line-height: 16px;
+  background-color: white;
+  color: #7289da;
+  font-size: 10px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+body > div.container div.row div.col-lg div.card img {
+  height: 75px;
+  object-position: center right;
+}
+body > div.container div.row div.col-lg div.card img.fit {
+  object-fit: contain;
+  object-position: center;
+}
+body > div.container div.row div.col-lg div.card div.card-body audio {
+  margin: 0;
+  padding: 0;
+  display: block;
+  width: 100%;
+}

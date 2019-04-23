@@ -15,7 +15,7 @@ $fileName = basename(__FILE__, '.php');
 <head>
 <?php include_once("./parts/head.html") ?>
 <!-- InstanceBeginEditable name="doctitle" -->
-<title>Untitled Document</title>
+<title>About</title>
 <!-- InstanceEndEditable -->
 <!-- InstanceBeginEditable name="head" -->
 <link rel="stylesheet" href="css/about.css" type="text/css" />

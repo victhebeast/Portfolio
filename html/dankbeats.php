@@ -1,16 +1,18 @@
 <?php declare(strict_types=1);
 // HTTP2 Push
 header("Link: </css/about.css>; as=style; rel=preload", false);
+header("Link: </css/dankbeats.css>; as=style; rel=preload", false);
 ?>
 <!doctype html>
 <html><!-- InstanceBegin template="/Templates/main.dwt" codeOutsideHTMLIsLocked="false" -->
 <head>
 <?php include_once("./parts/head.html") ?>
 <!-- InstanceBeginEditable name="doctitle" -->
-<title>Untitled Document</title>
+<title>Dank Beats</title>
 <!-- InstanceEndEditable -->
 <!-- InstanceBeginEditable name="head" -->
 <link rel="stylesheet" href="css/about.css" type="text/css" />
+<link rel="stylesheet" href="css/dankbeats.css" type="text/css" />
 <!-- InstanceEndEditable -->
 </head>
 
@@ -18,74 +20,84 @@ header("Link: </css/about.css>; as=style; rel=preload", false);
 	<?php include_once("parts/header.php") ?>
 	<div class="card">
 		<!-- InstanceBeginEditable name="card" -->
-		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio totam debitis fugit ipsam, rerum id, eos doloremque nisi adipisci ad cumque sapiente tempore quasi, blanditiis saepe repudiandae! Ipsa, laudantium, laborum!</p>
-		<p>Blanditiis fuga commodi in nisi repudiandae enim, tenetur voluptates accusamus asperiores, perferendis architecto! Vel quisquam accusamus molestiae labore nisi suscipit officia itaque. Atque, dolorum, quasi. Harum fugit quis, tempore maxime!</p>
-		<p>Voluptatibus quibusdam explicabo similique soluta distinctio perspiciatis odit sit earum quo quisquam perferendis est itaque laborum, vel vero, eos officia adipisci blanditiis nesciunt, culpa fuga, accusamus ad porro praesentium. Illum.</p>
-		<footer><i class="fab fa-facebook-f"></i><i class="fab fa-twitter"></i><i class="fab fa-linkedin-in"></i><i class="fab fa-github"></i></footer>
+		<img src="dankbeats/img/DankBeats.png" style="width: 100%;" />
 		<!-- InstanceEndEditable -->
 	</div>
 	<!-- InstanceBeginEditable name="Main Body" -->
 	<div class="container">
 		<div class="row">
 			<div class="col-lg">
-				<h2>Lorem ipsum</h2>
-			</div>
-		</div>
-	</div>
-	<div class="container">
-		<div class="row">
-			<div class="col-lg">
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum, modi quis necessitatibus, aspernatur explicabo sapiente, rem magnam doloremque ipsum atque quidem itaque earum deleniti hic. Vero consequatur aut rem nisi?</p>
-			</div>
-			<div class="col-lg">
-				<p>Vitae praesentium quasi perferendis expedita magnam laboriosam eveniet ut quidem minus, architecto necessitatibus perspiciatis autem et quos voluptas odio aperiam laborum quis aspernatur tenetur reiciendis dolorem voluptatibus? Eius consequuntur, natus.</p>
+				<div class="card">
+					<div class="card-body">
+						<div id="profile" style="background-color: #7289da;">
+							<div id="profileIcon"></div>
+							<span id="botName"><span style="font-weight: bold; font-size: larger;">Dank Beats</span><span style="font-size: smaller; color: rgba(255,255,255,0.75)">#0979</span><span id="botTag">Bot</span></span>
+						</div>
+						<a href="https://discordapp.com/oauth2/authorize?client_id=281635696559652864&scope=bot&permissions=3148800" class="btn btn-primary">Add to DISCORD</a>
+					</div>
+				</div>
 			</div>
 			<div class="col-lg">
-				<p>Architecto corporis ducimus illum rerum, deserunt, aut asperiores autem ea quod quia voluptate ab voluptates ipsa est ut tempore modi facilis natus repellendus consequuntur eum itaque sunt. Deleniti officiis, quam.</p>
-			</div>
-		</div>
-		<div class="row">
-			<div class="col-lg">
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident ullam perferendis nesciunt, laboriosam soluta aliquid asperiores nihil assumenda quasi eligendi aspernatur enim optio nam ipsam laborum ipsa fugit, corporis, architecto!</p>
-			</div>
-			<div class="col-lg">
-				<p>Expedita nihil omnis quam minima, necessitatibus qui, dolorum, corrupti, a eligendi iste fugiat molestiae obcaecati officiis tempora sed. Labore omnis deserunt, sed optio, ea iste consequatur distinctio minima! Quaerat, enim?</p>
+				<div class="card">
+					<img src="dankbeats/img/bitrate.png" class="card-img-top" />
+					<div class="card-body">
+						<h5 class="card-title">Quality</h5>
+						<p class="card-text">Why get a music bot that plays music in bad quality? Other discord music bots play music in 32-64kpbs or even lower. We give you all the bits you deserve! Whatever your bitrate is, even if you have 128kpbs because you're a partnered server, we will match it and play it in all its glory. If you change the quality after it its playing, just redo the play command.</p>
+					</div>
+				</div>
 			</div>
 			<div class="col-lg">
-				<p>Ducimus veniam nam mollitia, exercitationem enim maxime repellendus atque reiciendis iste possimus itaque iusto ipsa, inventore ut. Voluptas facere natus saepe deleniti ab, fugit repellendus quis quasi ratione, impedit praesentium.</p>
-			</div>
-		</div>
-		<div class="row">
-			<div class="col-lg">
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam quasi libero quibusdam veritatis unde, impedit molestias provident, reprehenderit, perferendis officiis beatae! Animi officia vitae quasi vero adipisci, soluta laborum voluptates.</p>
-			</div>
-			<div class="col-lg">
-				<p>Vel libero id quidem quod nobis! Accusantium nihil cum vel asperiores harum possimus nulla quidem, quos autem, temporibus illum sapiente laudantium optio, repellat repellendus ipsa dolores reprehenderit repudiandae eligendi! Fugiat!</p>
-			</div>
-			<div class="col-lg">
-				<p>Sunt fugiat deserunt dicta quidem itaque facere odio quis cum eos quam est consectetur, similique impedit molestias eius autem libero. Ad repellat veritatis possimus iusto numquam ullam officiis quia at.</p>
-			</div>
-		</div>
-		<div class="row">
-			<div class="col-lg">
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem sint, quod voluptate, quae repudiandae possimus, ducimus quos error unde eum natus, expedita nihil cumque nisi doloribus assumenda delectus eveniet similique.</p>
+				<div class="card bg-dark text-white">
+					<img src="https://dm3381rcqf07k.cloudfront.net/multisite.insomniac.com/wp-content/uploads/sites/28/2017/04/updated_edc_logo1.png" class="card-img-top fit" />
+					<img src="https://www.bonnaroo.com/wp-www-bonnaroo-com/wp/wp-content/uploads/2016/11/logo3.png" class="card-img-top fit" />
+					<img src="https://d3vhc53cl8e8km.cloudfront.net/hello-staging/wp-content/uploads/sites/9/2018/03/08174606/hard-logo-white-compressor.svg" class="card-img-top fit" />
+					<img src="https://www.lollapalooza.com/wp-www-lollapalooza-com/wp/wp-content/uploads/2014/05/lolla-logo.png" class="card-img-top fit" />
+					<div class="card-body">
+						<h5 class="card-title">EDM Festivals</h5>
+						<p class="card-text">Replay the live sets played by famous artists from the TOP EDM festivals in the world. Enjoy 1+ hour sets from artists such as Dillon Francis, Alison Wonderland, Marshmellow, and more. You can search by artist, event, year, and/or location.</p>
+					</div>
+				</div>
 			</div>
 			<div class="col-lg">
-				<p>Nam aliquam, cum eius itaque officia veritatis distinctio, fugiat atque quis deserunt dignissimos iste rem temporibus vero, reiciendis est. Doloribus nostrum ratione dicta delectus tempora non molestias omnis facilis cumque!</p>
-			</div>
-			<div class="col-lg">
-				<p>In accusamus, harum doloribus numquam ratione nam repudiandae. Voluptatum in, sunt ex temporibus officiis blanditiis ducimus, laboriosam similique dicta sequi dolor, nobis soluta voluptates rerum dolorum enim animi laborum quisquam!</p>
+				<div class="card">
+					<img src="dankbeats/img/radio.png" class="card-img-top fit" />
+					<div class="card-body">
+						<h5 class="card-title">Live Radio</h5>
+						<p class="card-text">We have handpicked 3 radio station that we enjoy that provide live dj-ing/mixing. You may visit their sites below by clicking on their logo or even listen to them with the player below. You can also send us more stations to add by <a href="https://www.demosjarco.dev/contact.php" target="_self">contacting us</a>.</p>
+					</div>
+				</div>
 			</div>
 		</div>
 		<div class="row">
 			<div class="col-lg">
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut ducimus porro quaerat a, dolorum velit suscipit voluptatem incidunt ex fugiat amet voluptatibus odit, doloribus voluptate. Vel aut sint esse error.</p>
+				<div class="card">
+					<img src="dankbeats/img/top-logo.png" class="card-img-top fit" />
+					<div class="card-body">
+						<audio controls>
+							<source src="https://ice42.securenetsystems.net/KKFR" type="audio/mpeg">
+						</audio>
+					</div>
+				</div>
 			</div>
 			<div class="col-lg">
-				<p>Laudantium facere excepturi sapiente sit quis perferendis distinctio incidunt animi voluptatibus quia deleniti sint minus eius, rem in nulla officia enim delectus odio fugit placeat, veniam porro cumque esse similique.</p>
+				<div class="card">
+					<img src="dankbeats/img/live-1015-logo-web-header.png" class="card-img-top fit" />
+					<div class="card-body">
+						<audio controls>
+							<source src="http://17813.live.streamtheworld.com:80/KALVFMAAC_SC" type="audio/mpeg">
+						</audio>
+					</div>
+				</div>
 			</div>
 			<div class="col-lg">
-				<p>Laudantium quidem quaerat veritatis, ipsum ab distinctio necessitatibus! Incidunt iusto beatae aspernatur illum quisquam aut dolor velit harum, quam ullam fugiat eum. Natus veritatis totam unde dolor quisquam dolorum, vitae!</p>
+				<div class="card">
+					<img src="dankbeats/img/mx99-4-1024x205.jpeg" class="card-img-top fit" />
+					<div class="card-body">
+						<audio controls>
+							<source src="http://38.107.243.219:8622/;" type="audio/mpeg" />
+						</audio>
+					</div>
+				</div>
 			</div>
 		</div>
 	</div>
