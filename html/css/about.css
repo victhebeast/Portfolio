@@ -4,7 +4,7 @@ body > div.card div.content div.picture {
   min-height: 100px;
   max-height: 100px;
   padding: 15px;
-  background-image: url(https://placehold.it/200x200);
+  background-image: url("../images/square_logo.svg");
   background-origin: content-box;
   background-size: cover;
   background-repeat: no-repeat;
@@ -155,6 +155,9 @@ body section.school div.tiles div.tile {
 body section.work div.tiles div.tile {
   background-color: #03a9f4;
   color: white;
+}
+body > div.container div.row {
+  margin: 10px auto;
 }
 body > div.container div.row div.col-lg div.card img {
   height: 200px;

@@ -8,7 +8,9 @@ $psbnClass = ($fileName == 'psbn') ? ' class="current"' : '';
 <header>
 	<div class="background"></div>
 	<div class="darken"></div>
-	<div id="logo"></div>
+	<a href="https://www.demosjarco.dev/">
+		<div id="logo"></div>
+	</a>
 	<nav>
 		<label class="switch">
 			<input type="checkbox" onChange="manualDarkMode(this.checked)">

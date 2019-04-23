@@ -91,7 +91,7 @@ $fileName = basename(__FILE__, '.php');
 				<div class="card">
 					<div class="card-body">
 						<p class="card-text">This list is too small, you can help expand it</p>
-						<a href="#" class="btn btn-primary">Hire me!</a>
+						<a href="contact.php" class="btn btn-primary">Hire me!</a>
 					</div>
 				</div>
 			</div>
@@ -112,7 +112,7 @@ $fileName = basename(__FILE__, '.php');
 					<div class="card-body">
 						<h5 class="card-title">PSBN</h5>
 						<p class="card-text">App created for the Peoria Student Broadcast Network. Watch live sports and shows from PSBN on your iPhone, iPad, or iPod Touch.</p>
-						<a href="#" class="btn btn-primary">See more</a>
+						<a href="https://demosjarco.dev/psbn.php" class="btn btn-primary">See more</a>
 					</div>
 					<div class="card-footer text-muted">Discontinued</div>
 				</div>
