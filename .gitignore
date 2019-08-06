@@ -88,3 +88,6 @@ mcmaps/
 
 # Dreamweaver files
 _notes/
+
+# Visual Studio
+.vs/
