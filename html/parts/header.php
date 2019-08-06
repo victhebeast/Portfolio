@@ -25,6 +25,7 @@ $psbnClass = ($fileName == 'psbn') ? ' class="current"' : '';
 					<li><a href="https://www.demosjarco.dev/psbn.php"<?php echo($psbnClass); ?>>PSBN</a></li>
 					<li><a href="https://www.demosjarco.dev/leagueinfocenter/"<?php echo($iclolClass); ?>>IC: LoL</a></li>
 					<li><a href="https://www.demosjarco.dev/dankbeats.php"<?php echo($dankbeatsClass); ?>>Dank Beats</a></li>
+					<li><a href="https://www.demosjarco.dev/no-cry-blackjack/">NCB</a></li>
 				</ul>
 			</li>
 		</ul>
