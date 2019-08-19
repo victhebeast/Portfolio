@@ -1,0 +1,3 @@
+[submodule "html/no-cry-blackjack"]
+	path = html/no-cry-blackjack
+	url = https://github.com/demosjarco/no-cry-blackjack.git
