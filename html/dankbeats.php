@@ -53,7 +53,7 @@
 	<div class="card">
 		<a href="http://power983.com/" target="_blank"><img src="img/top-logo.png" class="logo"></a>
 		<audio controls>
-			<source src="http://ice42.securenetsystems.net/KKFR" type="audio/mpeg" />
+			<source src="https://ice42.securenetsystems.net/KKFR" type="audio/mpeg" />
 		</audio>
 	</div>
 	<div class="card">
