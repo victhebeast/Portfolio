@@ -14,6 +14,7 @@ $fileName = basename(__FILE__, '.php');
 <title>Dank Beats</title>
 <!-- InstanceEndEditable -->
 <!-- InstanceBeginEditable name="head" -->
+<link rel="manifest" href="dankbeats/manifest.json" type="application/json" />
 <link rel="stylesheet" href="css/about.css" type="text/css" />
 <link rel="stylesheet" href="css/dankbeats.css" type="text/css" />
 <!-- InstanceEndEditable -->

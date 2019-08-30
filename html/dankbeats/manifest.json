@@ -1,0 +1,17 @@
+{
+	"name": "Dank Beats",
+	"short_name": "Dank Beats",
+	"lang": "en-US",
+	"start_url": "https://www.demosjarco.dev/dankbeats.php",
+	"scope": "https://www.demosjarco.dev/dankbeats.php",
+	"display": "standalone",
+	"background_color": "#2C2F33",
+	"theme_color": "#7289DA",
+	"icons": [
+		{
+			"src": "../images/dankBeats.jpg",
+			"sizes": "190x190",
+			"type": "image/jpg"
+		}
+	]
+}
