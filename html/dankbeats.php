@@ -3,9 +3,19 @@
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width" />
-<meta name="apple-mobile-web-app-capable" content="yes" />
-<meta name="mobile-web-app-capable" content="yes" />
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="application-name" content="MC Ov">
+<meta name="apple-mobile-web-app-title" content="Dank Beats">
+<link rel="icon" type="image/png" sizes="150x150" href="dankbeats/icon">
+<link rel="apple-touch-icon" type="image/png" sizes="150x150" href="dankbeats/icon">
+<meta name="theme-color" content="#7289DA" />
+<meta name="msapplication-navbutton-color" content="#7289DA" />
+<meta name="msapplication-TileColor" content="#2C2F33" />
 <title>Dank Beats</title>
+<link rel="manifest" href="dankbeats/manifest.json" type="application/json" />
+<meta name="msapplication-starturl" content="https://www.demosjarco.dev/dankbeats.php">
 <link rel="stylesheet" href="css/dankbeats.css" type="text/css" />
 </head>
 
