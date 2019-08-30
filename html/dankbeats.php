@@ -6,7 +6,7 @@
 <meta name="apple-mobile-web-app-capable" content="yes" />
 <meta name="mobile-web-app-capable" content="yes" />
 <title>Dank Beats</title>
-<link rel="stylesheet" href="main.css" type="text/css" />
+<link rel="stylesheet" href="css/dankbeats.css" type="text/css" />
 </head>
 
 <body>
