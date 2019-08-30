@@ -31,7 +31,7 @@
 	<div id="edm">
 		<div style="background-image: url(https://dm3381rcqf07k.cloudfront.net/multisite.insomniac.com/wp-content/uploads/sites/28/2017/04/updated_edc_logo1.png);"></div>
 		<div style="background-image: url(https://www.bonnaroo.com/wp-www-bonnaroo-com/wp/wp-content/uploads/2016/11/logo3.png);"></div>
-		<div style="background-image: url(https://s3.amazonaws.com/hardfest/wp-content/uploads/2016/04/hsmfwhite.png);"></div>
+		<div style="background-image: url(https://d3vhc53cl8e8km.cloudfront.net/hello-staging/wp-content/uploads/sites/9/2018/03/08174606/hard-logo-white-compressor.svg);"></div>
 		<div style="background-image: url(https://www.lollapalooza.com/wp-www-lollapalooza-com/wp/wp-content/uploads/2014/05/lolla-logo.png);"></div>
 	</div>
 	<div id="edmContent">
