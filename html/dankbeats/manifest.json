@@ -9,9 +9,9 @@
 	"theme_color": "#7289DA",
 	"icons": [
 		{
-			"src": "../images/dankBeats.jpg",
-			"sizes": "190x190",
-			"type": "image/jpg"
+			"src": "dankbeats/icon.png",
+			"sizes": "256x256",
+			"type": "image/png"
 		}
 	]
 }
