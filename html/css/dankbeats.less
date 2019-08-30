@@ -1,93 +1,320 @@
 /* LESS Document */
 
+@import (css) url('https://fonts.googleapis.com/css?family=Roboto');
+
 @discord-dark: #2C2F33;
 @blurple: #7289DA;
 @discord-tile-width: 540px;
 @discord-tile-height: 426px;
 @edm-concerts-padding: 2%;
 
-.BoxShadowHelper(@level: 1){
+.BoxShadowHelper(@level: 1) {
 	transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+
 	& when (@level = 1) {
 		box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
 	}
+
 	& when (@level = 2) {
 		box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
 	}
+
 	& when (@level = 3) {
 		box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
 	}
+
 	& when (@level = 4) {
 		box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
 	}
+
 	& when (@level = 5) {
 		box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
 	}
 }
 
 body {
-	> div.container {
-		div.row {
-			div.col-lg {
-				div.card {
-					margin: 10px 0;
+	margin: 0;
+	padding: 0;
+	font-family: 'Roboto', sans-serif;
+	background-color: #607D8B;
+	color: white;
 
-					div#profile {
-						padding: 10px 0;
-						margin-bottom: 10px;
-						font-family: 'Roboto', sans-serif;
-						color: white;
+	#logo {
+		display: block;
+		width: 100%;
+	}
 
-						div#profileIcon {
-							width: 190px;
-							height: 190px;
-							margin: 20px auto;
-							background-image: url("../images/dankBeats.jpg");
-							border-radius: 95px;
-							-webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
-							-moz-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
-							box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
-						}
+	.segment {
+		width: 100%;
+		margin: 0;
+		overflow: hidden;
+		background-color: black;
 
-						span#botName {
-							display: block;
-							margin: 0 auto;
-							text-align: center;
+		> * {
+			display: inline-block;
+			float: left;
+		}
 
-							span#botTag {
-								position: relative;
-								margin-left: 6px;
-								top: -2px;
-								padding: 1px 2px;
-								border-radius: 3px;
-								line-height: 16px;
-								background-color: white;
-								color: @blurple;
-								font-size: 10px;
-								font-weight: 500;
-								text-transform: uppercase;
-							}
-						}
-					}
+		div#profile {
+			width: 350px;
+			height: 250px;
+			background-image: url(https://discordapp.com/assets/8cd2f31a12333149b89ef3931626ab83.png);
+			background-position: center center;
 
-					img {
-						height: 75px;
-						object-position: center right;
+			div#profileIcon {
+				width: 190px;
+				height: 190px;
+				margin: 10px auto;
+				background-image: url(//techgeniusapps.com/images/app_icons/discord_bots/dankBeats.jpg);
+				border-radius: 95px;
+				-webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
+				-moz-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
+				box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
+			}
 
-						&.fit {
-							object-fit: contain;
-							object-position: center;
-						}
-					}
+			span#botName {
+				display: block;
+				margin: 0 auto;
+				text-align: center;
 
-					div.card-body {
-						audio {
-							margin: 0;
-							padding: 0;
-							display: block;
-							width: 100%;
-						}
-					}
+				span#botTag {
+					position: relative;
+					margin-left: 6px;
+					top: -2px;
+					padding: 1px 2px;
+					border-radius: 3px;
+					line-height: 16px;
+					background-color: white;
+					color: #7289da;
+					font-size: 10px;
+					font-weight: 500;
+					text-transform: uppercase;
+				}
+			}
+		}
+
+		div#profileContent {
+			width: ~"calc(100% - 350px)";
+			height: 250px;
+			-webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
+			-moz-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
+			box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
+
+			span#discordButton {
+				position: relative;
+				display: table;
+				margin: 87px auto;
+				padding: 5px;
+				border-radius: 5px;
+				font-size: xx-large;
+				font-weight: bold;
+				text-decoration: none;
+				text-align: center;
+				background-color: #23272A;
+				color: white;
+
+				img {
+					display: inline-block;
+				}
+
+				a:link, a:visited, a:active, a:hover {
+					color: white;
+					text-decoration: none;
+				}
+			}
+		}
+
+		div#qualityContent {
+			width: 75%;
+			height: 250px;
+			float: right;
+			-webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
+			-moz-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
+			box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
+			background-color: #43A047;
+
+			> * {
+				padding: 8px;
+			}
+		}
+
+		div#quality {
+			width: 25%;
+			height: 250px;
+			float: right;
+			background-color: #36393f;
+			background-image: url(img/bitrate.png);
+			background-repeat: no-repeat;
+			background-position: right center;
+		}
+
+		span.code {
+			white-space: pre;
+			font-family: Consolas, 'Andale Mono', 'Lucida Console', 'Lucida Sans Typewriter', Monaco, 'Courier New', 'monospace';
+			font-size: smaller;
+			background-color: rgba(255,255,255,0.25);
+		}
+
+		div#edm {
+			width: 40%;
+			height: 260px;
+			background-color: #03A9F4;
+
+			> div {
+				display: inline-block;
+				float: left;
+				margin: @edm-concerts-padding;
+				width: 50% - @edm-concerts-padding * 2;
+				height: 50% - @edm-concerts-padding * 4;
+				background-size: contain;
+				background-repeat: no-repeat;
+				background-position: center center;
+			}
+		}
+
+		div#edmContent {
+			position: relative;
+			width: 60%;
+			height: 260px;
+
+			div#background {
+				position: absolute;
+				width: 100%;
+				height: 100%;
+				z-index: 0;
+				filter: blur(5px);
+				opacity: 2/3;
+				background-color: black;
+				background-image: url(img/edcLights.png);
+				background-size: cover;
+				background-position: center center;
+			}
+
+			-webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
+			-moz-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
+			box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
+
+			h2, p {
+				position: relative;
+				z-index: 10;
+				padding: 8px;
+			}
+		}
+
+		div#radio {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			width: 25%;
+			height: 250px;
+			float: right;
+			background-color: #607D8B;
+
+			div#radioIcon {
+				width: 100%;
+				height: 80%;
+				filter: invert(100%);
+				background-image: url(img/radio.png);
+				background-size: contain;
+				background-repeat: no-repeat;
+				background-position: center center;
+			}
+		}
+
+		div#radioContent {
+			width: 75%;
+			height: 250px;
+			float: right;
+			background-color: #E53935;
+			-webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
+			-moz-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
+			box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
+
+			h2, p {
+				position: relative;
+				z-index: 10;
+				padding: 8px;
+			}
+
+			p {
+				a:link, a:visited, a:active {
+					color: white;
+					text-decoration: underline;
+				}
+
+				a:hover {
+					color: black;
+					text-decoration: underline;
+				}
+			}
+		}
+	}
+
+	#container {
+		width: 100%;
+		margin: 0;
+		padding: 0;
+		text-align: center;
+
+		.card {
+			margin: 10px;
+			padding: 0;
+			display: inline-block;
+			width: 300px;
+			background-color: #fafafa;
+			.BoxShadowHelper(2);
+
+			&:hover {
+				.BoxShadowHelper(4);
+			}
+
+			.logo {
+				margin: 0;
+				padding: 0;
+				display: block;
+				width: 100%;
+			}
+
+			audio {
+				margin: 0;
+				padding: 0;
+				display: block;
+				width: 100%;
+			}
+		}
+	}
+}
+
+/*audio::-webkit-media-controls-panel {
+	-webkit-filter: invert(100%);
+}*/
+
+@media screen and (max-width: @discord-tile-width) {
+	body {
+		.segment {
+			div#profile {
+				width: 100%;
+			}
+
+			div#profileContent {
+				display: none;
+			}
+
+			div#qualityContent {
+				> * {
+					padding: 0px 8px;
+				}
+			}
+
+			div#edmContent {
+				h2, p {
+					padding: 0px 8px;
+				}
+			}
+
+			div#radioContent {
+				h2, p {
+					padding: 0px 8px;
 				}
 			}
 		}
