@@ -142,7 +142,7 @@ body .segment div#edmContent div#background {
   filter: blur(5px);
   opacity: 0.66666667;
   background-color: black;
-  background-image: url(img/edcLights.png);
+  background-image: url(../dankbeats/img/edcLights.png);
   background-size: cover;
   background-position: center center;
 }
