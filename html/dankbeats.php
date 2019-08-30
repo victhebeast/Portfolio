@@ -51,19 +51,19 @@
 </div>
 <div id="container">
 	<div class="card">
-		<a href="http://power983.com/" target="_blank"><img src="img/top-logo.png" class="logo"></a>
+		<a href="http://power983.com/" target="_blank"><img src="dankbeats/img/top-logo.png" class="logo"></a>
 		<audio controls>
 			<source src="https://ice42.securenetsystems.net/KKFR" type="audio/mpeg" />
 		</audio>
 	</div>
 	<div class="card">
-		<a href="http://live1015phoenix.cbslocal.com/" target="_blank"><img src="img/live-1015-logo-web-header.png" class="logo"></a>
+		<a href="http://live1015phoenix.cbslocal.com/" target="_blank"><img src="dankbeats/img/live-1015-logo-web-header.png" class="logo"></a>
 		<audio controls>
 			<source src="http://17813.live.streamtheworld.com:80/KALVFMAAC_SC" type="audio/mpeg" />
 		</audio>
 	</div>
 	<div class="card">
-		<a href="http://mix99radio.com/" target="_blank"><img src="img/mx99-4-1024x205.jpeg" class="logo"></a>
+		<a href="http://mix99radio.com/" target="_blank"><img src="dankbeats/img/mx99-4-1024x205.jpeg" class="logo"></a>
 		<audio controls>
 			<source src="http://38.107.243.219:8622/;" type="audio/mpeg" />
 		</audio>
