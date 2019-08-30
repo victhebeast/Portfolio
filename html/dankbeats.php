@@ -59,7 +59,7 @@
 	<div class="card">
 		<a href="http://live1015phoenix.cbslocal.com/" target="_blank"><img src="dankbeats/img/live-1015-logo-web-header.png" class="logo"></a>
 		<audio controls>
-			<source src="http://17813.live.streamtheworld.com:80/KALVFMAAC_SC" type="audio/mpeg" />
+			<source src="https://17813.live.streamtheworld.com:80/KALVFMAAC_SC" type="audio/mpeg" />
 		</audio>
 	</div>
 	<div class="card">
