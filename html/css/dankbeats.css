@@ -25,6 +25,7 @@ body .segment div#profile {
   width: 350px;
   height: 250px;
   background-image: url(../images/dankBeats.jpg);
+  background-color: #7289da;
   background-position: center center;
 }
 body .segment div#profile div#profileIcon {

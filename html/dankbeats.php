@@ -12,7 +12,7 @@
 <body>
 <img id="logo" src="img/DankBeats.png" />
 <div class="segment" style="background-color: #FF8F00;">
-	<div id="profile" style="background-color: #7289da;">
+	<div id="profile">
 		<div id="profileIcon"></div>
 		<span id="botName"><span style="font-weight: bold; font-size: larger;">Dank Beats</span><span style="font-size: smaller; color: rgba(255,255,255,0.75)">#0979</span><span id="botTag">Bot</span></span>
 	</div>
