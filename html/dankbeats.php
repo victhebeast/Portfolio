@@ -63,18 +63,6 @@
 		</audio>
 	</div>
 	<div class="card">
-		<a href="http://kmel.iheart.com/" target="_blank"><img src="img/KMEL_Logo.png" class="logo"></a>
-		<audio controls>
-			<source src="https://kmel-fm.akacast.akamaistream.net/7/918/19798/v1/auth.akacast.akamaistream.net/kmel-fm" />
-		</audio>
-	</div>
-	<div class="card">
-		<a href="http://live105.cbslocal.com/" target="_blank"><img src="img/live105blackred225x110.png" class="logo"></a>
-		<audio controls>
-			<source src="http://17963.live.streamtheworld.com:80/KITSFMAAC_SC" type="audio/mpeg" />
-		</audio>
-	</div>
-	<div class="card">
 		<a href="http://mix99radio.com/" target="_blank"><img src="img/mx99-4-1024x205.jpeg" class="logo"></a>
 		<audio controls>
 			<source src="http://38.107.243.219:8622/;" type="audio/mpeg" />
