@@ -10,7 +10,7 @@
 </head>
 
 <body>
-<img id="logo" src="img/DankBeats.png" />
+<img id="logo" src="dankbeats/img/DankBeats.png" />
 <div class="segment" style="background-color: #FF8F00;">
 	<div id="profile">
 		<div id="profileIcon"></div>
