@@ -24,15 +24,15 @@ body .segment > * {
 body .segment div#profile {
   width: 350px;
   height: 250px;
-  background-image: url(../images/dankBeats.jpg);
   background-color: #7289da;
+  background-image: url(https://discordapp.com/assets/8cd2f31a12333149b89ef3931626ab83.png);
   background-position: center center;
 }
 body .segment div#profile div#profileIcon {
   width: 190px;
   height: 190px;
   margin: 10px auto;
-  background-image: url(//techgeniusapps.com/images/app_icons/discord_bots/dankBeats.jpg);
+  background-image: url(../images/dankBeats.jpg);
   border-radius: 95px;
   -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
