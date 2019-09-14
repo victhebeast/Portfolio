@@ -19,6 +19,6 @@
 	"homepage": "https://github.com/demosjarco/Portfolio#readme",
 	"devDependencies": {
 		"less": "^3.10.3",
-		"less-watch-compiler": "^1.13.0"
+		"less-watch-compiler": "^1.14.1"
 	}
 }
