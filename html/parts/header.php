@@ -1,4 +1,4 @@
-<?php
+<?php  declare(strict_types=1);
 $aboutClass = ($fileName == 'index') ? ' class="current"' : '';
 $contactClass = ($fileName == 'contact') ? ' class="current"' : '';
 $iclolClass = ($fileName == 'iclol') ? ' class="current"' : '';
