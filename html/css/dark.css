@@ -1,7 +1,0 @@
-body.dark {
-  background-color: black;
-  color: white;
-}
-body.dark > div.card {
-  background-color: #212121;
-}
