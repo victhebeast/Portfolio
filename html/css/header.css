@@ -1,0 +1,48 @@
+header {
+  margin: 0;
+  height: 44px;
+}
+header > * {
+  display: inline-block;
+  margin: 0;
+  height: 44px;
+  vertical-align: top;
+}
+header div#logo {
+  padding-left: 8px;
+  margin-left: -1px;
+  width: calc(((3/1) * 44px) - 1px);
+  height: 44px;
+  background-size: contain;
+  background-position: center center;
+  overflow: hidden;
+}
+header nav * {
+  display: inline-block;
+}
+header nav ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+header nav ul li a,
+header nav ul li span {
+  height: 44px;
+  vertical-align: central;
+}
+@media (prefers-color-scheme: dark) {
+  header {
+    background-color: #121212;
+  }
+  header div#logo {
+    background-image: url("../images/logo_dark.svg");
+  }
+}
+@media (prefers-color-scheme: light) {
+  header {
+    background-color: #EDEDED;
+  }
+  header div#logo {
+    background-image: url("../images/logo_light.svg");
+  }
+}
