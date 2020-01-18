@@ -2,6 +2,7 @@
 
 header {
 	margin: 0;
+	padding: 0 8px;
 	height: @navbar-height;
 
 	> * {
@@ -12,8 +13,6 @@ header {
 	}
 
 	div#logo {
-		padding-left: 8px;
-		margin-left: -1px;
 		width: calc(((3/1) * @navbar-height) - 1px);
 		height: @navbar-height;
 		background-size: contain;
@@ -22,8 +21,12 @@ header {
 	}
 
 	nav {
+		float: right;
+
 		* {
 			display: inline-block;
+			height: @navbar-height;
+			line-height: @navbar-height !important;
 		}
 
 		ul {
@@ -32,10 +35,23 @@ header {
 			list-style-type: none;
 
 			li {
+				> i {
+					vertical-align: middle;
+				}
 
-				a, span {
-					height: @navbar-height;
-					vertical-align: central;
+				ul {
+					display: none;
+
+					li {
+						align-content {
+							&:link, &:visited, &:hover, &:active {
+								text-decoration: none;
+							}
+
+							&:hover {
+							}
+						}
+					}
 				}
 			}
 		}
@@ -45,6 +61,7 @@ header {
 @media (prefers-color-scheme: dark) {
 	header {
 		background-color: #121212;
+		color: white;
 
 		div#logo {
 			background-image: url("../images/logo_dark.svg");
@@ -58,6 +75,7 @@ header {
 @media (prefers-color-scheme: light) {
 	header {
 		background-color: #EDEDED;
+		color: black;
 
 		div#logo {
 			background-image: url("../images/logo_light.svg");

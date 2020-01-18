@@ -1,5 +1,6 @@
 header {
   margin: 0;
+  padding: 0 8px;
   height: 44px;
 }
 header > * {
@@ -9,30 +10,41 @@ header > * {
   vertical-align: top;
 }
 header div#logo {
-  padding-left: 8px;
-  margin-left: -1px;
   width: calc(((3/1) * 44px) - 1px);
   height: 44px;
   background-size: contain;
   background-position: center center;
   overflow: hidden;
 }
+header nav {
+  float: right;
+}
 header nav * {
   display: inline-block;
+  height: 44px;
+  line-height: 44px !important;
 }
 header nav ul {
   margin: 0;
   padding: 0;
   list-style-type: none;
 }
-header nav ul li a,
-header nav ul li span {
-  height: 44px;
-  vertical-align: central;
+header nav ul li > i {
+  vertical-align: middle;
+}
+header nav ul li ul {
+  display: none;
+}
+header nav ul li ul li align-content:link,
+header nav ul li ul li align-content:visited,
+header nav ul li ul li align-content:hover,
+header nav ul li ul li align-content:active {
+  text-decoration: none;
 }
 @media (prefers-color-scheme: dark) {
   header {
     background-color: #121212;
+    color: white;
   }
   header div#logo {
     background-image: url("../images/logo_dark.svg");
@@ -41,6 +53,7 @@ header nav ul li span {
 @media (prefers-color-scheme: light) {
   header {
     background-color: #EDEDED;
+    color: black;
   }
   header div#logo {
     background-image: url("../images/logo_light.svg");
