@@ -6,7 +6,7 @@ header("Link: </css/main.css>; as=style; rel=preload", false);
 header("Link: </css/light.css>; as=style; rel=preload", false);
 header("Link: </css/dark.css>; as=style; rel=preload", false);
 
-header("Link: <https://code.jquery.com/jquery-3.4.0.min.js>; as=script; rel=preload; crossorigin", false);
+header("Link: <https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js>; as=script; rel=preload; crossorigin", false);
 header("Link: <https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js>; as=script; rel=preload; crossorigin", false);
 header("Link: </js/darkMode.js>; as=script; rel=preload", false);
 header("Link: </js/main.js>; as=script; rel=preload", false);
