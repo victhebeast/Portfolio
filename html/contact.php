@@ -1,4 +1,6 @@
 <?php declare(strict_types=1);
+// HTTP2 Push
+include_once("./parts/preload.php");
 
 $fileName = basename(__FILE__, '.php');
 ?>

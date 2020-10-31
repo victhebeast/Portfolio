@@ -1,4 +1,13 @@
 <?php declare(strict_types=1);
+// HTTP2 Push
+include_once("./parts/preload.php");
+header("Link: </css/about.css>; as=style; rel=preload", false);
+header("Link: </images/square_logo.svg>; rel=preload; as=image", false);
+header("Link: </images/gcc.png>; rel=preload; as=image", false);
+header("Link: </images/mcc.png>; rel=preload; as=image", false);
+header("Link: </images/psbn.png>; rel=preload; as=image", false);
+header("Link: </images/iclol.png>; rel=preload; as=image", false);
+header("Link: </images/dankBeats.jpg>; rel=preload; as=image", false);
 
 $fileName = basename(__FILE__, '.php');
 ?>
