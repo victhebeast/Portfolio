@@ -12,21 +12,16 @@ header("Link: </images/dankBeats.jpg>; rel=preload; as=image", false);
 $fileName = basename(__FILE__, '.php');
 ?>
 <!doctype html>
-<html><!-- InstanceBegin template="/Templates/main.dwt" codeOutsideHTMLIsLocked="false" -->
+<html>
 <head>
 <?php include_once("./parts/head.html") ?>
-<!-- InstanceBeginEditable name="doctitle" -->
 <title>About</title>
-<!-- InstanceEndEditable -->
-<!-- InstanceBeginEditable name="head" -->
 <link rel="stylesheet" href="css/about.css" type="text/css" />
-<!-- InstanceEndEditable -->
 </head>
 
 <body class="light">
 	<?php include_once("parts/header.php") ?>
 	<div class="card">
-		<!-- InstanceBeginEditable name="card" -->
 		<div class="content">
 			<div class="picture"></div>
 			<div class="info">
@@ -43,9 +38,7 @@ $fileName = basename(__FILE__, '.php');
 			<a href="https://github.com/demosjarco" target="_blank"><i class="fab fa-github"></i></a>
 			<a href="https://stackoverflow.com/users/3745599/victor?tab=profile" target="_blank"><i class="fab fa-stack-overflow"></i></a>
 		</footer>
-		<!-- InstanceEndEditable -->
 	</div>
-	<!-- InstanceBeginEditable name="Main Body" -->
 	<div class="container">
 		<div class="row">
 			<div class="col-lg">
@@ -141,8 +134,6 @@ $fileName = basename(__FILE__, '.php');
 			</div>
 		</div>
 	</div>
-
-	<!-- InstanceEndEditable -->
 	<?php include_once("./parts/footer.html") ?>
 </body>
-<!-- InstanceEnd --></html>
+</html>
