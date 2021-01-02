@@ -84,5 +84,5 @@ typings/
 .dynamodb/
 
 # Minecraft maps
-mcmaps/*.webp
-mcmaps/*.png
+html/mcmaps/*.webp
+html/mcmaps/*.png
